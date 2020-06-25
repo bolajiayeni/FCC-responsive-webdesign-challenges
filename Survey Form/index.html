@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="title">Bolaji's Code Camp</h1>
+    <p id="description">Join Bolaji Ayeni's coding journey to full stack web-development!</p>
+
+    <form id="survey-form">
+        <div class="form-item">
+            <label id="name-label" for="name">Name:</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Please enter your name" required>
+        </div>
+
+        <div class="form-item">
+            <label id="email-label" for="email">E-mail:</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Please enter your E-mail" required>
+        </div>
+
+        <div class="form-item">
+            <label id="number-label" for="number">Age:</label>
+            <input type="number" name="number" id="number" min="10" max="99" class="form-control" placeholder="Age">
+        </div>
+
+        <div class="form-item">
+            <label id="dropdown-label" for="dropdown">Role:</label>
+            <select name="role" id="dropdown" class="form-control" required>
+                <option disabled selected value>Select current role</option>
+                <option value="dancer">Dancer</option>
+                <option value="smoker">Smoker</option>
+                <option value="Gamer">Gamer</option>
+            </select>
+        </div>
+
+        <div class="form-item">
+            <p>What's your weight?</p>
+            <label>
+                <input name="weight" value="10-30kg" type="radio" class="input-radio" checked>10-30kg
+            </label>
+
+            <label>
+                <input name="weight" value="31-50kg" type="radio" class="input-radio" checked>31-50kg
+            </label>
+
+            <label>
+                <input name="weight" value="51-70kg" type="radio" class="input-radio" checked>51-70kg
+            </label>
+        </div>
+
+        <div class="form-item">
+            <p>What's are your hobbies?</p>
+            <label>
+                <input name="hobby" value="dancing" type="checkbox" class="input-checkbox" checked>dancing
+            </label>
+
+            <label>
+                <input name="hobby" value="singing" type="checkbox" class="input-checkbox">singing
+            </label>
+
+            <label>
+                <input name="hobby" value="cooking" type="checkbox" class="input-checkbox">cooking
+            </label>
+        </div>
+        
+        <div class="form-item">
+            <label id="textarea-label" for="comment-textarea">Comments:</label>
+            <textarea id="comments" class="comment-textarea" name="comment" placeholder="Give us some feedback"></textarea>
+        </div>
+        
+        
+        <div class="form-item">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+    </form>
+</body></html>
