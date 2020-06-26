@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;1,200;1,300;1,600&display=swap');
+
+/*colors*/
+/*
+navbar - #E98074
+head part - #D8C3A5
+head text - #EAE7DC
+project holder - #8E8D8A
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a:link,
+a:visited,
+a:active,
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 62.5%;
+    text-rendering: optimizeLegibility;
+    font-weight: 400;
+}
+
+#navbar {
+    position: fixed;
+    font-size: 1.5rem;
+    width: 100%;
+    background-color: #e85a4f;
+    font-weight: 500;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+#navbar ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    list-style: none;
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+#navbar li {
+    margin-left: 2rem;
+}
+
+#navbar a {
+    color: #EAE7DC;
+}
+
+#welcome-section {
+    background-color: #D8C3A5;
+    height: 100vh;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#welcome-section h1 {
+    color: #8e8d8a;
+    font-size: 3rem;
+}
+
+#projects {
+    background-color: #8E8D8A;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projects h2 {
+    color: #EAE7DC;
+    font-size: 2rem;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding-bottom: 1rem;
+    border-bottom: 2px dashed #EAE7DC;
+}
+
+.projects-container {
+    margin-top: 5%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.project-showcase {
+   display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 2rem;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    background-color: #484746;
+}
+
+.project-image {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 25rem;
+    width: auto;
+}
+
+.project-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #EAE7DC;
+}
+
+.code {
+  color:#484746 ;
+  transition: color 0.3s ease-out;
+}
+
+.project-title:hover .code {
+  color: #E98074;
+}
+
+.btn:link,
+.btn:visited {
+    color: #EAE7DC;
+    padding: 1rem;
+    background-color: #e85a4f;
+    margin-top: 2%;
+    font-size: 2rem;
+    border-radius: 5px;
+    transition: 0.3s ease-out;
+}
+
+.btn:hover,
+.btn:active {
+    color: #e85a4f;
+    padding: 1rem;
+    background-color: #EAE7DC;
+    margin-top: 2%;
+    font-size: 2rem;
+    border-radius: 5px;
+}
+
+footer {
+    font-size: 1.5rem;
+    width: 100%;
+    background-color: #e85a4f;
+    font-weight: 500;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+footer a {
+    color: #EAE7DC;
+    padding: 1rem;
+}
+
+@media (max-width: 1800px) {
+    .project-image {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 20rem;
+    width: auto;
+}
+    
+
+}
+
+@media (max-width: 1500px) {
+    .project-image {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 15rem;
+    width: auto;
+}
+}
+
+@media (max-width: 1200px) {
+    .project-image {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 15rem;
+    width: auto;
+}
+    .projects-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 0;
+}
+    .project-showcase {
+     margin-top: 0;   
+   display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    background-color: #484746;
+}
+
+
+}
